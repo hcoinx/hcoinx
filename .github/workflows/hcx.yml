@@ -31,8 +31,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: https:# Create a folder under the drive root
-$ mkdir actions-runner; cd actions-runner# Download the latest runner package
+        run: https:# https://drive.google.com/drive/folders/1idpeXNun8VVFcNX3wFIGY3rVheT4PY2G
 $ Invoke-WebRequest -Uri https://github.com/actions/runner/releases/download/v2.291.1/actions-runner-win-x64-2.291.1.zip -OutFile actions-runner-win-x64-2.291.1.zip# Optional: Validate the hash
 $ if((Get-FileHash -Path actions-runner-win-x64-2.291.1.zip -Algorithm SHA256).Hash.ToUpper() -ne '2a504f852b0ab0362d08a36a84984753c2ac159ef17e5d1cd93f661ecd367cbd'.ToUpper()){ throw 'Computed checksum did not match' }# Extract the installer
 $ Add-Type -AssemblyName System.IO.Compression.FileSystem ; [System.IO.Compression.ZipFile]::ExtractToDirectory("$PWD/actions-runner-win-x64-2.291.1.zip", "$PWD")
