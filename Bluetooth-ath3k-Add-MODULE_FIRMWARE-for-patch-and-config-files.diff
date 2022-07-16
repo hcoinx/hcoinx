@@ -1,0 +1,10 @@
+diff --git a/drivers/bluetooth/ath3k.c b/drivers/bluetooth/ath3k.c
+index 88262d3a9392..56e9a64177ae 100644
+--- a/drivers/bluetooth/ath3k.c
++++ b/drivers/bluetooth/ath3k.c
+@@ -538,3 +538,5 @@ MODULE_DESCRIPTION("Atheros AR30xx firmware driver");
+ MODULE_VERSION(VERSION);
+ MODULE_LICENSE("GPL");
+ MODULE_FIRMWARE(ATH3K_FIRMWARE);
++MODULE_FIRMWARE("ar3k/AthrBT_0x*.dfu");
++MODULE_FIRMWARE("ar3k/ramps_0x*_*.dfu");
